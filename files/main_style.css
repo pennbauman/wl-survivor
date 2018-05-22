@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Arvo|Metal Mania');
+
+:root {
+	--bg-dar: #050523;
+	--bg-dark: #0c0c27;
+	--txt-red: #d83434;
+}
+.header {
+	padding: 1em 1vw;
+	color: #EDF2FC;
+	font-family: 'Metal Mania', cursive;
+}
+#title {
+	font-size: 8em;
+}
+.navbar{	
+	overflow: hidden;
+	background-color: #050523;
+	font-family: 'Arvo', serif;
+	position: fixed;
+	width: 94vw;
+	max-width:100%;
+	padding-left: 3vw;
+	padding-right: 3vw;
+}
+.navbar a {
+	float: left;
+	background-color: #050523;
+	color: #d83434;
+	text-align: center;
+	padding: 0 1vw;
+	text-decoration: none;
+	font-size: 2.5em;
+	line-height: 2.7em;
+	margin: 0;
+	border:none;
+}
+#headerImg {
+	float:left;
+	height: 8em;
+	width: 8em;
+	padding-right: 1vw;
+	padding-bottom: 0;
+	padding-top:0.5em;
+}
+.right {
+	float: right !important;
+	display:inline-block;
+}
+.tabpage {
+	color: #79abe0;
+	padding-left: 8vw;
+	padding-right: 14vw;
+	padding-top:7em;
+}
+.tabpage p {
+	margin-top: 1em;
+	padding-top: 0;
+}
+.tabpage h2 {
+	margin-bottom: 0;
+}
+h1{
+	font-size: 5em;
+	font-family: 'Arvo', serif;
+	text-align:center;
+}
+h2{
+	font-size: 4em;
+	font-family: 'Arvo', serif;
+}
+h3{
+	font-size: 3.7em;
+	font-family: 'Arvo', serif;
+}
+p {
+	font-size: 3.3em;
+	font-family: 'Arimo', sans-serif;
+}
+ul{
+	font-size: 3.3em;
+	font-family: 'Arimo', sans-serif;
+	margin-left:2vw;
+}
+ul ul { font-size:1em; }
+.response {
+	padding: 0 0 0 2vw;
+}
+body{
+	margin: 0;
+	padding-bottom: 6%;
+	font-size: 1vh;
+	background:#0c0c27;
+	z-index:0;
+}
+#fade {
+	position:fixed;
+	top:0;
+	left:0;
+	height:100vh;
+	width:100vw;
+	z-index:-1;
+	background-attachment:fixed;
+	background-image: url("/files/side_cat.png"), linear-gradient(#2f2c89, #24226b, #0c0c27);
+	background-position:right bottom;
+	background-size: 12vw 66vh, 100vw 100vh;
+	background-repeat:no-repeat;
+	/*background:linear-gradient(#2f2c89, #24226b, #0c0c27);*/
+
+}
+.highlight {
+	color:#edf2fc;
+}
+.error {
+	color:#d83434;
+}
+a {
+	color:inherit;
+}
+form, .fake_form {
+	width:100%;
+	padding: 2em 2vw;
+	max-width:50em;
+	margin:auto;
+	text-align: center;
+	font-family:'Arimo', sans-serif;
+	color: #EDF2FC;
+	background: #4f44af;
+	border-radius: 2em;
+}
+input[name] {
+	background: #2f2c89;
+	border-color: #4f44af;
+	border-radius: .3em;
+	font-family: 'Arimo', sans-serif;
+	color: white;
+	font-size: 3em;
+	line-height:1.1em;
+}
+input[type = 'submit'], .fake_form_button {
+	background: #2f2c89;
+	color: #EDF2FC;
+	text-align: center;
+	font-family:'Arimo', sans-serif;
+	padding: .6em 2vw;
+	width:50%;
+	text-align:center;
+	text-decoration: none;
+	font-size: 2.5em;
+	border:none;
+	border-radius:2em;
+	-moz-appearance:none !important;
+	-webkit-appearance:none !important;
+	appearance:none;
+}
+h4 {
+	font-family:'Arimo', sans-serif;
+	font-size: 2em;
+	color: #f92020;
+	margin-bottom:0;
+	display:inline;
+}
+i {
+	font-family:'Arimo', sans-serif;
+	font-size: 2em;
+	margin-bottom: 0
+}
+form b, .fake_form b {
+	font-family:'Arimo', sans-serif;
+	font-size:2.5em;
+}
+.question, .ruletitle, .disclaimertitle {
+	background-color: #050523;
+    cursor: pointer;
+    padding: .4em 1vw;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+.question, .ruletitle {
+    color: var(--txt-blue);
+}
+.disclaimertitle {
+    color: #d83434;
+}
+.response {
+	padding: 0 2vw;
+    display: none;
+    text-align: justify;
+    text-indent:none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+.rulesection {
+	padding: 1em 1vw;
+    text-align: justify;
+    display: block;
+}
+table {
+	font-family:'Arimo', sans-serif;
+	font-size:2.5em;
+    color: #79abe0;
+    padding: .4em .4vw;
+    width: 100%;
+    text-align: left;
+    border: 2px solid #79abe0;
+    border-collapse: collapse;
+}
+th {
+	background-color: #050523;
+	color: #79abe0;
+	text-align: center;
+	border: 2px solid #050523;
+	border-collapse: collapse;
+	padding: .4em .4vw;
+}
+tr {
+	border: 2px solid #050523;
+	border-collapse: collapse;
+	padding: .4em .4vw;
+}
+td {
+	text-align: center;
+	border: 2px solid #050523;
+	border-collapse: collapse;
+	padding: .4em .4vw;
+}
+li {
+	margin-bottom: 1em;
+}
+div .peopleText{
+	font-family: 'Arimo', sans-serif;
+}
+.teamPic{
+	height: 40vw;
+	max-height: 240px;
+	min-height: 160px;
+	width: 30vw;
+	max-width: 180px;
+	min-width: 120px;
+	padding-right:0vw;
+}
+.name{
+	background-color: #050523;
+	padding: 18px;
+	text-align: center;
+}
+.info{
+	float: left;
+	padding-right: 3vw;
+	padding-left: 2vw;
+	max-width: 600px;
+}
+
+.bioset {
+	min-height: 20vh;
+}
+#faq_page {
+	padding-bottom:15em;
+}
+#killcode {
+	display: none;
+}
+#decoycode {
+	display: inline;
+}
+#safety_vid {
+	display:block;
+	width:65vw;
+	height:36.5625vw;
+	/* calc: w*720/1280 */
+	margin:auto;
+}
+#safety_img {
+	display:block;
+	width:55vw;
+	margin:auto;
+}
+.navbar a:hover {
+	background-color: #7c51c1;
+	color: #0c0c27;
+}
+a:hover {
+	color:#edf2fc;
+}
+.question:hover {
+	background-color: #7c51c1;
+	color: #0c0c27;
+}
+tr:hover {
+	background-color: #7c51c1;
+	color: #0c0c27;
+}
+
+@media (max-aspect-ratio: 1/1) { /* Height > Width */
+	.tabpage {
+		padding-left:6vw;
+		padding-right:6vw;
+	}
+	.navbar {
+		padding-left:1vw;
+		padding-right:1vw;
+		width:98vw;
+	}
+	.navbar a {
+		padding:0 1vw;
+		font-size:2.4em;
+		line-height:2.2em;
+	}
+	#safety_img {
+		width:65vw;
+	}
+	#fade {
+		background-image:null;
+		background-size: 100vw 100vh;
+		background:linear-gradient(#2f2c89, #24226b, #0c0c27);
+	}
+	.tickertape {
+		display:none;
+	}
+}
+@media screen (hover:none) {
+	.navbar a:hover {
+		background-color: #7c51c1;
+		color:inherit;
+	}
+	a:hover {
+		color:inherit;
+	}
+	.question:hover {
+		background-color: #7c51c1;
+		color:inherit;
+	}
+}
+
+.tickertape {	
+	/*overflow: hidden;*/
+	background-color: var(--bg-dark);
+	outline: 1vh solid var(--bg-dark);
+	font-family: 'Arvo', serif;
+	position: fixed;
+	bottom: 0;
+	width: 94vw;
+	max-width:100%;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	height: 7vh;
+}
+.tickertape p {
+	background-color: var(--bg-dark);
+	color: var(--txt-red);
+	font-family: 'Arvo', serif;
+    padding: .4em 1vw;
+    font-size: 2.5em;
+	line-height: 5vh;
+    border: none;
+    outline: none;
+    /*transition: 0.1s;*/
+    text-decoration: none;
+    margin: 0;
+    /*border: 1px solid green;*/
+}
+.killTitle {
+	background-color: var(--bg-dark);
+	color: var(--txt-red);
+	font-family: 'Arvo', serif;
+    padding: .4em 1vw;
+    font-size: 2.5em;
+	line-height: 5vh;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    float: left;
+    text-decoration: none;
+    margin: 0;
+}
+.listOfNames {
+	float: right;
+	color: var(--txt-red);
+	text-align: left;
+	width: 0vw;
+	height: 4vh;
+	white-space: nowrap;
+}
