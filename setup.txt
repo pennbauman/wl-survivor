@@ -1,0 +1,6 @@
+replace "<staff-password-md5-hash>" with the actual hash of the staff password where it appears
+	/sys/comfirm/index.php
+	/sys/players/index.php
+	/sys/shuffle/index.php
+	/sys/staff/index.php
+	/sys/week-reset/index.php
