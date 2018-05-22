@@ -7,14 +7,20 @@
 ### SQL Tables
 The following tables are required with the listed columns listed for each (name = type).
 
-dailyKills 
+**dailyKills**
+
 	day = date
+
 	dead = text
 
-gameData
+**gameData**
+
 	game = int(11) = 1
+
 	startDate = date
+
 	beforeGame = char(1)
+	
 	winner = varchar(10)
 
 safeRooms
