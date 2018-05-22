@@ -7,10 +7,8 @@
 ### SQL Tables
 The following tables are required with the listed columns listed for each (name = type).
 
-**dailyKills**
-
-	day = date
-
+**dailyKills** \n
+	day = date \n
 	dead = text
 
 **gameData**
@@ -20,7 +18,7 @@ The following tables are required with the listed columns listed for each (name 
 	startDate = date
 
 	beforeGame = char(1)
-	
+
 	winner = varchar(10)
 
 safeRooms
