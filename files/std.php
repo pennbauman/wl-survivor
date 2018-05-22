@@ -2,7 +2,7 @@
 	// LOAD: 
 	// include $_SERVER["DOCUMENT_ROOT"]."/files/std.php";
 
-	$conn = new mysqli("localhost", "valypfnd_admin", "2101143259", "valypfnd_assassins_users");
+	$conn = new mysqli("<host>", "<username>", "<password>", "<database>");
 	
 	if (isset($_GET["a"])) {
 		$url = $_GET["a"];
