@@ -1,0 +1,18 @@
+Project Managers: 
+	Penn Bauman
+	Kara Probasco
+
+Programmers:
+	Penn Bauman (PHP, HTML, CSS, JS)
+	Alisa Khuu (HTML, CSS, JS)
+	Vincent LaGrassa (HTML, CSS, JS)
+
+Artists: 
+	Abigail Ryan
+	Alisa Khuu
+
+Rules & Other Site Content:
+	Kara Probasco
+	Faith Zeng
+	Annabeth Stokely
+	Claire Baptiste
