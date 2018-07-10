@@ -1,0 +1,109 @@
+/files/std.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/std.php";
+	Sets
+		$url
+		$conn
+		$n
+
+/files/auth.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/auth.php";
+	!! requires /files/std.php
+	Sets
+		$username
+		$password
+		$auth
+		$before
+
+/files/game_data.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/game_data.php";
+	!! requires /files/std.php
+	Sets
+		$playerSum
+		$aliveSum
+		$start
+		$winner
+
+/files/user_data.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/user_data.php";
+	!! requires /files/std.php
+	!! requires /files/auth.php
+	Sets
+		$name 
+		$alive 
+		$lifeCode 
+		$target  
+		$killAttempts 
+		$killCount
+		$weekCount
+		$win 
+
+/files/target_data.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/target_data.php";
+	!! requires /files/std.php
+	!! requires /files/auth.php
+	!! requires /files/user_data.php
+	Sets
+		$targetName 
+		$targetCode 
+		$targetTarget 
+
+/files/safety_day.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/safety_day.php";
+	Sets
+		$safetyDay
+		$safetyDayDesc
+
+/files/general_safety.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/general_safety.php";
+	!! requires /files/safety_day.php
+	Sets
+		$safety
+		$safetyDesc 
+		$purge
+		$safetyVisual
+
+/files/safety_exemptions.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/safety_exemptions.php";
+	!! requires /files/safety_day.php
+	!! requires $page
+	Sets
+		$exemptionText
+
+/files/kill_time.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/kill_time.php";
+	!! requires /files/auth.php
+	Sets
+		$killTime
+
+
+/files/func.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/func.php";
+	boolToStr(bool)
+		return String
+
+/files/account_header.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/account_header.php";
+	!! requires /files/std.php
+	!! requires /files/auth.php
+	!! requires $page
+	Echos
+		$username - <a>logout</a>
+		or
+		<a>login</a> - <a>register</a>
+
+/files/head.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/head.php";
+	!! requires /files/std.php
+	!! requires $pageTitle
+
+/files/header.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/header.php";
+	!! requires $urlEnd
+	!! requires /files/std.php
+	!! requires /files/auth.php
+
+/files/footer.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/footer.php";
+
+/files/confirm_info.php
+	include $_SERVER["DOCUMENT_ROOT"]."/files/confirm_info.php";
